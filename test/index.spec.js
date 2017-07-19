@@ -15,4 +15,8 @@ describe('babysitter kata', function() {
     it('should return total sum from bed time to midnight', function() {
         expect(methods.bedTimeToMidNight(3)).to.equal(24.00);
     });
+
+    it('should return total sum from midnight to end of job', function() {
+        expect(methods.midNightToEnd(4)).to.equal(64.00);
+    });
 });

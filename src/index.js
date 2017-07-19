@@ -17,7 +17,17 @@ var bedTimeToMidNight = function(hours) {
     return wages;
 }
 
+var midNightToEnd = function(hours) {
+    var wages = 0,
+        rate = 16;
+
+    wages = hours * rate;
+
+    return wages;
+}
+
 module.exports = {
     startTimeToBedTime: startTimeToBedTime,
-    bedTimeToMidNight: bedTimeToMidNight
+    bedTimeToMidNight: bedTimeToMidNight,
+    midNightToEnd: midNightToEnd
 };
