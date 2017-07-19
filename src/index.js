@@ -1,16 +1,13 @@
-var babysitterCharge = function(hours) {
-    var wages = 0;
+var startTimeToBedTime = function(hours) {
+    var wages = 0,
+        rate = 12;
 
-    for (i = 0; i <= hours.length; i++) {
-
-        if (i < 4) {
-            wages += 12;
-        }
-
-    }
+    wages = hours * rate;
 
     return wages;
 
 }
 
-module.exports = babysitterCharge;
+module.exports = {
+    startTimeToBedTime: startTimeToBedTime
+};
