@@ -19,4 +19,10 @@ describe('babysitter kata', function() {
     it('should return total sum from midnight to end of job', function() {
         expect(methods.midNightToEnd(4)).to.equal(64.00);
     });
+
+    it('should return total sum for a full day', function() {
+        expect(methods.fullDay(4, 3, 4)).to.equal(136.00);
+    });
+
+
 });

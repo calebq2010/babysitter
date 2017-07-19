@@ -26,8 +26,20 @@ var midNightToEnd = function(hours) {
     return wages;
 }
 
+var fullDay = function(startBed, bedMid, midEnd) {
+    var startToBed = startTimeToBedTime(startBed),
+        bedToMid = bedTimeToMidNight(bedMid),
+        midToEnd = midNightToEnd(midEnd);
+
+    return startToBed + bedToMid + midToEnd;
+
+
+
+}
+
 module.exports = {
     startTimeToBedTime: startTimeToBedTime,
     bedTimeToMidNight: bedTimeToMidNight,
-    midNightToEnd: midNightToEnd
+    midNightToEnd: midNightToEnd,
+    fullDay: fullDay
 };
